@@ -65,7 +65,7 @@ const actualizarUsuario = async (req, res = response) => {
     try {
         usuario.nombre = req.body.nombre;
         usuario.apellido = req.body.apellido;
-        usuario.email = req.body.email;
+       
 
         const usuarioActualizado = await usuario.save();
         //devuelve el usuario actualizado
